@@ -1,0 +1,71 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.card {
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(13, 110, 253, 0.03);
+}
+
+.badge-status {
+    font-size: 0.85rem;
+    padding: 0.4em 0.7em;
+    cursor: pointer;
+}
+
+.bg-aman {
+    background-color: #198754;
+    color: white;
+}
+
+.bg-menipis {
+    background-color: #fd7e14;
+    color: white;
+}
+
+.bg-kosong {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Tooltip preview catatan saat hover kolom Status */
+.status-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.catatan-tooltip {
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #212529;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.catatan-tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #212529 transparent transparent transparent;
+}
